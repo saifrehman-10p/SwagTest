@@ -1,0 +1,351 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: http://127.0.0.1:5002
+paths:
+  //store/store4:
+    get:
+      description: Auto generated using Swagger Inspector
+      operationId: store_store4_get
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: "{\n    \"name\": \"store4\",\n    \"items\": [\n       \
+                    \ {\n            \"name\": \"Iphonex\",\n            \"price\"\
+                    : 1000.0\n        }\n    ]\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    post:
+      description: Auto generated using Swagger Inspector
+      operationId: store_store4_post
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: "{\n    \"name\": \"store4\",\n    \"items\": [\n       \
+                    \ {\n            \"name\": \"Iphonex\",\n            \"price\"\
+                    : 1000.0\n        }\n    ]\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+  //item/apple:
+    delete:
+      description: Auto generated using Swagger Inspector
+      operationId: item_apple_delete
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_201'
+              examples:
+                "0":
+                  value: "{\n    \"message\": \"item deleted successfully\"\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+  //store/store1:
+    delete:
+      description: Auto generated using Swagger Inspector
+      operationId: store_store1_delete
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_201'
+              examples:
+                "0":
+                  value: "{\n    \"message\": \"store deleted successfully\"\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+  ///usersignup:
+    post:
+      description: Auto generated using Swagger Inspector
+      operationId: usersignup_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_usersignup_body'
+            examples:
+              "0":
+                value: "{\n    \"username\":\"zainab1\",\n    \"password\":\"12345\"\
+                  \n}"
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_201'
+              examples:
+                "0":
+                  value: "{\n    \"message\": \"user added successfully\"\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+  //item/Iphonex:
+    get:
+      description: Auto generated using Swagger Inspector
+      operationId: item_iphonex_get
+      responses:
+        "401":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_401'
+              examples:
+                "0":
+                  value: "{\n  \"description\": \"Unsupported authorization type\"\
+                    , \n  \"error\": \"Invalid JWT header\", \n  \"status_code\":\
+                    \ 401\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    put:
+      description: Auto generated using Swagger Inspector
+      operationId: item_iphonex_put
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/item_Iphonex_body'
+            examples:
+              "0":
+                value: "{\n    \"price\":1000,\n    \"store_id\":4\n}"
+              "1":
+                value: "{\n    \"price\":15.99,\n    \"store_id\":3\n}"
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+              examples:
+                "0":
+                  value: "{\n    \"name\": \"Iphonex\",\n    \"price\": 1000.0\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    post:
+      description: Auto generated using Swagger Inspector
+      operationId: item_iphonex_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/item_Iphonex_body_1'
+            examples:
+              "0":
+                value: "{\n    \"price\":1000,\n    \"store_id\":4\n}"
+              "1":
+                value: "{\n    \"price\":15.99,\n    \"store_id\":3\n}"
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+              examples:
+                "0":
+                  value: "{\n    \"name\": \"Iphonex\",\n    \"price\": 15.99\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+  /item/:
+    get:
+      description: Auto generated using Swagger Inspector
+      operationId: item_get
+      responses:
+        "201":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_201_1'
+              examples:
+                "0":
+                  value: "{\n    \"items\": [\n        {\n            \"name\": \"\
+                    apple\",\n            \"price\": 15.99\n        },\n        {\n\
+                    \            \"name\": \"apple1\",\n            \"price\": 15.99\n\
+                    \        },\n        {\n            \"name\": \"post1\",\n   \
+                    \         \"price\": 15.99\n        }\n    ]\n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+  //auth:
+    post:
+      description: Auto generated using Swagger Inspector
+      operationId: auth_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_auth_body'
+            examples:
+              "0":
+                value: "{\n    \"username\":\"zainab1\",\n    \"password\":\"12345\"\
+                  \n}"
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_2'
+              examples:
+                "0":
+                  value: "{\n  \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDgxOTQ2MDYsImlhdCI6MTY0ODE5NDMwNiwibmJmIjoxNjQ4MTk0MzA2LCJpZGVudGl0eSI6Mn0.ssaT4123aV2oQoRx7BqTEyGAfx9C45z7H1TT85eZfug\"\
+                    \n}\n"
+      servers:
+      - url: http://127.0.0.1:5002
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+    servers:
+    - url: http://127.0.0.1:5002
+components:
+  schemas:
+    _usersignup_body:
+      type: object
+      properties:
+        password:
+          type: string
+        username:
+          type: string
+    inline_response_200_items:
+      type: object
+      properties:
+        price:
+          type: number
+        name:
+          type: string
+      example:
+        price: 0.80082819046101150206595775671303272247314453125
+        name: name
+    _auth_body:
+      type: object
+      properties:
+        password:
+          type: string
+        username:
+          type: string
+    inline_response_201:
+      type: object
+      properties:
+        message:
+          type: string
+      example:
+        message: message
+    inline_response_200_1:
+      type: object
+      properties:
+        price:
+          type: number
+        name:
+          type: string
+      example:
+        price: 0.80082819046101150206595775671303272247314453125
+        name: name
+    inline_response_200:
+      type: object
+      properties:
+        name:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/inline_response_200_items'
+      example:
+        name: name
+        items:
+        - price: 0.80082819046101150206595775671303272247314453125
+          name: name
+        - price: 0.80082819046101150206595775671303272247314453125
+          name: name
+    inline_response_201_1:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/inline_response_200_items'
+      example:
+        items:
+        - price: 0.80082819046101150206595775671303272247314453125
+          name: name
+        - price: 0.80082819046101150206595775671303272247314453125
+          name: name
+    inline_response_200_2:
+      type: object
+      properties:
+        access_token:
+          type: string
+      example:
+        access_token: access_token
+    item_Iphonex_body:
+      type: object
+      properties:
+        store_id:
+          type: integer
+        price:
+          type: number
+    item_Iphonex_body_1:
+      type: object
+      properties:
+        store_id:
+          type: integer
+        price:
+          type: number
+    inline_response_401:
+      type: object
+      properties:
+        status_code:
+          type: integer
+        description:
+          type: string
+        error:
+          type: string
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: http://yourauthurl.com
+          scopes:
+            scope_name: Enter your scopes here
+      x-tokenInfoFunc: swagger_server.controllers.authorization_controller.check_oauth2
+      x-scopeValidateFunc: swagger_server.controllers.authorization_controller.validate_scope_oauth2
+
